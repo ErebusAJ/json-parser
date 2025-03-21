@@ -6,6 +6,5 @@ vendor
 .idea/
 *.swp
 
-go.sum
 
 .env
