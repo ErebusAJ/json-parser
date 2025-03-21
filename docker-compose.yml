@@ -2,7 +2,6 @@ version: "2.27"
 
 services:
   backend:
-    build:
-      context: .
+    image: "aaryaj/json-parser:latest"
     ports:
       - "8000:8000"
