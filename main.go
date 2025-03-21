@@ -16,7 +16,8 @@ func main(){
 
 	port := os.Getenv("PORT_NO")
 	if port == ""{
-		log.Printf("error retreiving port")
+		log.Printf("error retreiving port using default port")
+		port = "8000"
 	}
 	//initialize router
 	r := gin.Default()
