@@ -43,7 +43,7 @@ func main(){
 	r.GET("/", func(c *gin.Context){
 		c.HTML(200, "index.html", nil)
 	})
-	r.POST("/bfhl", utils.HandleArray)
+	r.POST("/json-parse", utils.HandleArray)
 	r.GET("/bfhl", utils.HandleOperation)
 
 	r.Run(":"+port)
