@@ -1,0 +1,11 @@
+*.exe
+*.out
+
+vendor
+.vscode/
+.idea/
+*.swp
+
+go.sum
+
+.env
