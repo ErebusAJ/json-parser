@@ -1,5 +1,4 @@
 @Library("git-shared") _
-
 pipeline{
     agent { label "bub"}
 
