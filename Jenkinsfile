@@ -14,7 +14,7 @@ pipeline{
         stage("Build"){
             steps{
                 script{
-                    dockerBuild("json-parser", "latest")
+                    dockerBuild("aaryaj", "json-parser", "latest")
                 }
             }
         }
