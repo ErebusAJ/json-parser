@@ -14,7 +14,7 @@ pipeline{
         stage("Build"){
             steps{
                 script{
-                    docker-build("json-parser", "latest")
+                    dockerBuild("json-parser", "latest")
                 }
             }
         }
@@ -22,7 +22,7 @@ pipeline{
         stage("Push"){
             steps{
                 script{
-                    docker-push("dockerCreds", "json-parser", "latest")
+                    dockerPush("dockerCreds", "json-parser", "latest")
                 }
             }
         }
@@ -30,7 +30,7 @@ pipeline{
         stage("Deploy"){
             steps{
                 script{
-                    docker-deploy()
+                    dockerDeploy()
                 }
             }
         }
